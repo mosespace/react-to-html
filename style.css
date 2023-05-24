@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 10%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.container .content-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fffefe;
+    padding: 0 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .content-between h2 {
+    cursor: pointer;
+    /* margin: 0 47px; */
+    font-weight: 500;
+    white-space: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+}
+
+.nav-links {
+    display: none;
+    list-style: none;
+    padding: 15px 30%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.nav-links li {
+    margin: 0 12px;
+}
+
+.nav-links li a {
+    color: rgb(88, 86, 86);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-links li a:hover {
+    font-weight: 500;
+    color: #377ffb;
+}
+
+.social-icons {
+    padding: 15px 0;
+    display: flex;
+    font-size: 24px;
+    /* overflow: hidden; */
+}
+
+.social-icons i {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.social-icons i:hover {
+    color: black;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    .nav-links {
+        display: none;
+    }
+
+    .container .content-between {
+        font-weight: 1000;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .social-icons {
+        font-size: 18px;
+    }
+
+    .social-icons i {
+        margin-right: 20px;
+        
+    }
+}
+
