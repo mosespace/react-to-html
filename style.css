@@ -13,7 +13,7 @@
     align-items: center;
     background-color: #fff;
     padding: 5px 10%;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container .content-between {
@@ -27,11 +27,10 @@
 }
 
 .container .content-between h2 {
+    color: black;
     cursor: pointer;
-    /* margin: 0 47px; */
     font-weight: 500;
     white-space: nowrap;
-    /* overflow: hidden; */
     text-overflow: ellipsis;
 }
 
@@ -78,6 +77,83 @@
     color: black;
 }
 
+
+/* .main-theme{
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: #377ffb;
+}
+
+
+.main-theme h2{
+    color: #fff;
+} */
+.main-theme{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+.sub-div {
+    height: 60px;
+    width: 50px;
+  }
+  
+.div-left-column {
+    padding: 8% 13%;
+    height: 60vh;
+    width: 50%;
+    background-color: #f4f4f4;
+}
+
+.div-left-column h1 {
+    white-space: nowrap;
+    color: #262626;
+    text-overflow: ellipsis;
+}
+
+.div-left-column h3{
+    white-space: nowrap;
+    color: #377ffb;
+    text-overflow: ellipsis;
+    font-size: 1.8rem;
+}
+
+.div-left-column p{
+    margin-top: 10px;
+    white-space: nowrap;
+    color: #262626;
+    /* text-overflow: ellipsis; */
+    /* font-size: 1.8rem; */
+}
+
+.div-left-column a {
+    text-decoration: none;
+    color: #1266f1;
+    cursor: pointer;
+    border-left: 6px solid red;
+    padding-left: 10px;
+  /* background-color: lightgrey; */
+    
+}
+
+.div-left-column a:hover {
+    text-decoration: none;
+    color: red;
+    border-left: 6px solid #1266f1;
+}
+
+.div-right-column {
+    width: 50%;
+    height: 60vh;
+    background-color: #f4f4f4;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 767px) {
     .nav-links {
@@ -98,5 +174,44 @@
         margin-right: 20px;
         
     }
+    .main-theme {
+        margin: 0px;
+        flex-direction: column;
+      }
+
+    .div-left-column, .div-right-column {
+        flex-basis: auto;
+        width: 100%;
+        padding: 8% 10%;
+      }
+
+      .div-left-column h1 {
+        margin: 0 0px;
+        font-size: 22px;
+    }
+    
+    .div-left-column h3{
+        margin-top: 16px;
+        font-size: 22px;
+    }
+    
+    @media (max-width: 767px) {
+        .div-left-column p {
+        /* inline-size: min-content; */
+          padding: 10px 0;
+          display: block;
+          flex-direction: column-reverse;
+          font-size: smaller;
+          /* font-size: 22px; */
+          overflow: hidden;
+          word-wrap: normal;
+        }
+      }
+      
+      
+    /* .div-left-column, .div-right-column{
+        display: flex;
+        flex-direction: column;
+    } */
 }
 
